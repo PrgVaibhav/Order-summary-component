@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: url(images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: -5rem;
+  background-color: hsl(225deg, 100%, 94%);
+  font-family: "Red Hat Display", sans-serif;
+}
+
+html {
+  text-align: center;
+  font-size: 100%;
+}
+
+main {
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  background-color: hsl(225deg, 100%, 98%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  max-width: 23rem;
+  border-radius: 1rem;
+  margin: 0 1.3rem;
+}
+
+.main-bg {
+  width: 100%;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  border-bottom: 1rem;
+}
+
+.card-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.6rem;
+  max-width: 18rem;
+}
+
+.card-info h2 {
+  color: hsl(223deg, 47%, 23%);
+}
+
+.card-info p {
+  line-height: 1.5;
+  font-size: 0.8rem;
+  color: hsl(224deg, 23%, 55%);
+  margin-bottom: 1rem;
+}
+
+.price-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  gap: 2rem;
+  padding: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 18rem;
+  background-color: hsla(225deg, 100%, 94%, 0.3);
+  border-radius: 1rem;
+}
+
+.price-info a {
+  font-size: 0.8rem;
+  color: hsl(245deg, 75%, 52%);
+  text-decoration: underline;
+  font-weight: 900;
+}
+
+.price-info a:hover {
+  opacity: 70%;
+}
+
+.price-info ul {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.price-info li:nth-of-type(1) {
+  font-weight: 900;
+  font-size: 0.9rem;
+  color: hsl(223deg, 47%, 23%);
+}
+
+.price-info li:nth-of-type(2) {
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: hsl(224deg, 23%, 55%);
+}
+
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  gap: 0.8rem;
+  margin: 1rem 0 1rem 0;
+}
+
+.buttons a {
+  border-radius: 12px;
+  max-width: 18rem;
+}
+
+.btn-1 {
+  display: block;
+  color: hsl(225deg, 100%, 94%);
+  background-color: hsl(245deg, 75%, 52%);
+  font-weight: 700;
+  padding: 0.8rem 3rem;
+  width: 100%;
+  -webkit-box-shadow: 0 1rem 0.5rem 0 hsl(225deg, 100%, 94%);
+          box-shadow: 0 1rem 0.5rem 0 hsl(225deg, 100%, 94%);
+}
+
+.btn-2 {
+  padding: 0.7rem 0;
+  background-color: inherit;
+  margin-bottom: 1rem;
+  color: hsl(224deg, 23%, 55%);
+  font-weight: 900;
+}
+
+.btn-1:hover {
+  opacity: 70%;
+}
+
+.btn-2:hover {
+  color: hsl(223deg, 47%, 23%);
+}
+
+@media (max-width: 300px) {
+  html {
+    font-size: 80%;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+$-Pale-blue: hsl(225, 100%, 94%);
+$-Bright-blue: hsl(245, 75%, 52%);
+$-Very-pale-blue: hsl(225, 100%, 98%);
+$-Desaturated-blue: hsl(224, 23%, 55%);
+$-Dark-blue: hsl(223, 47%, 23%);
+$-font-family: 'Red Hat Display', sans-serif;
+
+body{
+    background: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: -5rem;
+    background-color: $-Pale-blue;
+    font-family: $-font-family;
+}
+
+html{
+    text-align: center;
+    font-size: 100%;
+}
+
+main{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card{
+    background-color: $-Very-pale-blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    max-width: 23rem;
+    border-radius: 1rem;
+    margin: 0 1.3rem;
+}
+.main-bg{
+    width: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom: 1rem;
+}
+.card-info{
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+    max-width: 18rem;
+}
+
+.card-info h2{
+    color: $-Dark-blue;
+}
+
+.card-info p{
+    line-height: 1.5;
+    font-size: .8rem;
+    color: $-Desaturated-blue;
+    margin-bottom: 1rem;
+}
+.price-info{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+    padding: 1rem;
+    align-items: center;
+    max-width: 18rem;
+    background-color: hsla(225, 100%, 94%, 0.3);
+    border-radius: 1rem;
+}
+
+
+.price-info a{
+    font-size: .8rem;
+    color: $-Bright-blue;
+    text-decoration: underline;
+    font-weight: 900;
+}
+.price-info a:hover {
+    opacity: 70%;
+}
+
+.price-info ul {
+    font-size:1rem;
+    font-weight: 700;
+}
+
+.price-info li:nth-of-type(1){
+    font-weight: 900;
+    font-size: .9rem;
+    color: $-Dark-blue;
+}
+.price-info li:nth-of-type(2){
+    font-weight: 500;
+    font-size: .8rem;
+    color: $-Desaturated-blue;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: .8rem;
+    margin: 1rem 0 1rem 0;
+}
+
+.buttons a{
+    border-radius: 12px;
+    max-width: 18rem;
+}
+
+.btn-1{
+    display: block;
+    color: $-Pale-blue;
+    background-color: $-Bright-blue;
+    font-weight: 700;
+    padding: .8rem 3rem;
+    width: 100%;
+    box-shadow: 0 1rem .5rem 0 $-Pale-blue;
+}
+.btn-2 {
+    padding: 0.7rem 0;
+    background-color: inherit;
+    margin-bottom: 1rem;
+    color: $-Desaturated-blue;
+    font-weight: 900;
+}
+
+.btn-1:hover{
+    opacity: 70%;
+}
+
+
+.btn-2:hover {
+    color: hsl(223, 47%, 23%);
+}
+
+
+@media (max-width: 300px) {
+    html {
+        font-size: 80%
+    }
+}
